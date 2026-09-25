@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign In — Project Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <span class="mark">Project Portal</span>
+    <span class="dept">BCA Final Year · Semester Mini Project</span>
+  </header>
+
+  <main class="auth-wrap">
+    <div class="card">
+      <h1>Sign in</h1>
+      <p class="lede">Log in to continue to your project submission form.</p>
+
+      <form id="login-form" novalidate>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+        <div class="field-error" id="username-error"></div>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+        <div class="field-error" id="password-error"></div>
+
+        <div class="field-error" id="form-error" style="min-height:1.2em;"></div>
+
+        <button type="submit">Log in</button>
+      </form>
+
+      <p class="foot-link">New here? <a href="register.html">Create an account</a></p>
+    </div>
+  </main>
+
+  <p class="credits">Developed by R.S. Thiru Vishal · K.B. Naveen · Y. Saran</p>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

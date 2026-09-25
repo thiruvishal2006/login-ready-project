@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register — Project Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <span class="mark">Project Portal</span>
+    <span class="dept">BCA Final Year · Semester Mini Project</span>
+  </header>
+
+  <main class="auth-wrap">
+    <div class="card">
+      <h1>Create account</h1>
+      <p class="lede">Register once, then sign in to submit your project.</p>
+
+      <form id="register-form" novalidate>
+        <label for="reg-username">Username</label>
+        <input type="text" id="reg-username" name="username" autocomplete="username" required>
+        <div class="field-error" id="reg-username-error"></div>
+
+        <label for="reg-email">Email</label>
+        <input type="email" id="reg-email" name="email" autocomplete="email" required>
+        <div class="field-error" id="reg-email-error"></div>
+
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" name="password" autocomplete="new-password" required>
+        <div class="field-error" id="reg-password-error"></div>
+
+        <div class="field-error" id="reg-form-error" style="min-height:1.2em;"></div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p class="foot-link">Already have an account? <a href="index.html">Log in</a></p>
+    </div>
+  </main>
+
+  <p class="credits">Developed by R.S. Thiru Vishal · K.B. Naveen · Y. Saran</p>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
